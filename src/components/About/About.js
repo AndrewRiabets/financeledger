@@ -8,7 +8,7 @@ import s from './About.module.css';
 export default function About() {
   return (
     <>
-      <div id="About" className={s.about_container}>
+      <section id="About" className={s.about_container}>
         <div>
           <picture>
             <source
@@ -30,7 +30,7 @@ export default function About() {
           </p>
           <button className={s.about_btn}>Read More</button>
         </div>
-      </div>
+      </section>
     </>
   );
 }

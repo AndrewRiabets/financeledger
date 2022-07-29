@@ -7,7 +7,7 @@ import s from './Blog.module.css';
 export default function Blog() {
   return (
     <>
-      <div id="Blog" className={s.blog_container}>
+      <section id="Blog" className={s.blog_container}>
         <picture>
           <source srcSet={`${blogWebp}, ${blogWebp2x}`} type="image/webp" />
           <source srcSet={`${blogJpg}, ${blogJpg2x}`} type="image/jpeg" />
@@ -31,7 +31,7 @@ export default function Blog() {
             Read Our Blog
           </button>
         </div>
-      </div>
+      </section>
     </>
   );
 }

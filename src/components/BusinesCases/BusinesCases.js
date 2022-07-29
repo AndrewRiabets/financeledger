@@ -33,7 +33,7 @@ import s from './BusinesCases.module.css';
 export default function BusinesCases() {
   return (
     <>
-      <div className={s.cases_container} id="Cases">
+      <section className={s.cases_container} id="Cases">
         <p className={s.cases_baseline}>This is what we do</p>
         <h2 className={s.cases_title}>Busines Cases</h2>
         <p className={s.cases_text}>
@@ -153,7 +153,7 @@ export default function BusinesCases() {
             </a>
           </li>
         </ul>
-      </div>
+      </section>
     </>
   );
 }

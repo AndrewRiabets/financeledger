@@ -19,7 +19,7 @@ import s from './Team.module.css';
 export default function Team() {
   return (
     <>
-      <div className={s.team_container}>
+      <section className={s.team_container}>
         <p className={s.team_baseline}>Who we are</p>
         <h2 className={s.team_title}>Our Professional Team</h2>
         <p className={s.team_text}>
@@ -88,7 +88,7 @@ export default function Team() {
             <p className={s.team_person_position}>Marketing Head</p>
           </li>
         </ul>
-      </div>
+      </section>
     </>
   );
 }

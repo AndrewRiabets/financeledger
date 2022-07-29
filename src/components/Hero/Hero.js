@@ -8,7 +8,7 @@ import s from './Hero.module.css';
 export default function Hero() {
   return (
     <>
-      <div className={s.hero_container}>
+      <section className={s.hero_container}>
         <div className={s.hero_info}>
           <h1 className={s.hero_title}>The Sky Is The Limit</h1>
           <p className={s.hero_text}>
@@ -19,20 +19,7 @@ export default function Hero() {
             Read More
           </button>
         </div>
-        {/* <div className={s.bgWrapper}>
-          <picture>
-            <source
-              srcSet={`${showcaseWebp}, ${showcaseWebp2x}`}
-              type="image/webp"
-            />
-            <source
-              srcSet={`${showcaseJpg}, ${showcaseJpg2x}`}
-              type="image/jpeg"
-            />
-            <img src={showcaseJpg} className={s.heroBg} alt="City" />
-          </picture>
-        </div> */}
-      </div>
+      </section>
     </>
   );
 }

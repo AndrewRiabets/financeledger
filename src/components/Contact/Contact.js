@@ -13,33 +13,10 @@ export default function Contact() {
     // handleSubmit,
     // reset,
   } = useForm({ mode: 'onBlur' });
-  // const onSubmit = e => {
-  //   e.preventDefault();
-  //   let myForm = document.getElementById('formData');
-  //   let formData = new FormData(myForm);
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: new URLSearchParams(formData).toString(),
-  //   })
-  //     .then(() => console.log('Form successfully submitted'))
-  //     .catch(error => alert(error));
-  // };
-  // const onSubmit = data => {
-  //   let formData = new FormData(data);
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: new URLSearchParams(formData).toString(),
-  //   })
-  //     .then(() => console.log('Form successfully submitted'))
-  //     .catch(error => alert(error));
-  //   reset();
-  // };
 
   return (
     <>
-      <div id="Contact" className={s.contact_container}>
+      <section id="Contact" className={s.contact_container}>
         <picture>
           <source
             srcSet={`${contactWebp}, ${contactWebp2x}`}
@@ -51,16 +28,8 @@ export default function Contact() {
 
         <div className={s.contact_info_wrapper}>
           <h2 className={s.contact_title}>Request Callback</h2>
-          <form
-            name="contact"
-            method="POST"
-            netlify
-            data-netlify-honeypot="bot-field"
-            onSubmit="submit"
-          >
-            <div hidden>
-              <input name="bot-field" />
-            </div>
+          <form name="contact" method="post">
+            <input type="hidden" name="form-name" value="contact" />
             <div className={s.contact_form_input_wrapper}>
               <input
                 className={s.contact_form_input}
@@ -68,7 +37,7 @@ export default function Contact() {
                 name="name"
                 placeholder="Enter your name"
                 {...register('name', {
-                  required: 'Please, enter your name!',
+                  required: 'This is a required field!',
                   minLength: {
                     value: 2,
                     message: 'minimum 2 symbols',
@@ -89,7 +58,7 @@ export default function Contact() {
                 name="email"
                 placeholder="Enter email*"
                 {...register('email', {
-                  required: 'Please, enter your email!',
+                  required: 'This is a required field!',
                   pattern: {
                     value: /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/,
                     message: 'Please enter correct email!',
@@ -108,7 +77,7 @@ export default function Contact() {
             </button>
           </form>
         </div>
-      </div>
+      </section>
     </>
   );
 }

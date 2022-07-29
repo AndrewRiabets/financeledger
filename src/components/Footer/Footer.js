@@ -4,7 +4,7 @@ import s from './Footer.module.css';
 export default function Footer() {
   return (
     <>
-      <div className={s.footer_container}>
+      <footer className={s.footer_container}>
         <div>
           <ul className={s.footer_socialLinks}>
             <li className={s.footer_socialLinks_item}>
@@ -40,7 +40,7 @@ export default function Footer() {
         <div>
           <p className={s.footer_copyright}>Copyright © 2021 - FinanceLedger</p>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

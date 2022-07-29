@@ -26,7 +26,7 @@ export default function Header() {
             to="Home"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-5000}
             duration={500}
             className={s.logo_text}
           >
@@ -45,7 +45,7 @@ export default function Header() {
                   to="Home"
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-5000}
                   duration={500}
                 >
                   Home
@@ -57,7 +57,7 @@ export default function Header() {
                   to="About"
                   spy={true}
                   smooth={true}
-                  offset={-95}
+                  offset={-85}
                   duration={500}
                 >
                   About
@@ -69,7 +69,7 @@ export default function Header() {
                   to="Cases"
                   spy={true}
                   smooth={true}
-                  offset={-90}
+                  offset={-85}
                   duration={500}
                 >
                   Cases
@@ -81,7 +81,7 @@ export default function Header() {
                   to="Blog"
                   spy={true}
                   smooth={true}
-                  offset={-95}
+                  offset={-85}
                   duration={500}
                 >
                   Blog
@@ -93,7 +93,7 @@ export default function Header() {
                   to="Contact"
                   spy={true}
                   smooth={true}
-                  offset={-95}
+                  offset={-85}
                   duration={500}
                 >
                   Contact
