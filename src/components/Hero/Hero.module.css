@@ -1,0 +1,121 @@
+/* mobile styles */
+.hero_container {
+    padding-top: 142px;
+    height: 533px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)),
+    url(../../images/hero/showcase.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    /* max-width: 767px; */
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)),
+            url(../../images/hero/showcase@2x.jpg);
+    }
+}
+
+.hero_title{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 66px;
+    text-align: center;
+    z-index: 1;
+    color: var(--text-color-2)
+}
+
+.hero_text{
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 37px;
+    text-align: center;
+    color: var(--text-color-2);
+}
+
+.hero_btn {
+    display: block;
+    width: 156px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--accent-color);
+    color: var(--text-color-1);
+}
+
+.hero_btn:hover {
+    background-color: var(--accent-color-hover);
+    transition: all 0.5s ease-in-out;
+}
+
+/* tablet styles */
+@media screen and (min-width: 768px) {
+    .hero_container {
+        padding-top: 0px;
+        width: 100vw;
+        height: 100vh;
+        padding: auto;
+    }
+
+    .hero_info {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 768px;
+    }
+    .hero_title{
+        font-size: 55px;
+    }
+
+    .hero_btn{
+        width: 165px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 28px;
+        position: relative;
+    }
+
+    .hero_btn::before {
+        content: url('../../images/btn-icon.svg');
+        margin-right: 4px;
+        vertical-align: middle;
+        width: 9px;
+        height: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .hero_container {
+        padding-top: 0px;
+        width: 100vw;
+        height: 100vh;
+        max-height: 1024px;
+        padding: auto;
+    }
+
+    .hero_info{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

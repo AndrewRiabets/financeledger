@@ -1,0 +1,120 @@
+/* main styles */
+.header {
+    position: fixed;
+    padding-top: 20px;
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.header_changeColor {
+    position: fixed;
+    padding-top: 5px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease-in-out;
+}
+
+.logo_wrapper{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.logo_wrapper:hover{
+    font-size: 34px;
+    text-shadow: -1px -1px 0 rgb(211, 226, 182),
+            -2px -2px 1px rgb(209, 223, 181);
+}
+
+.logo_icon {
+    margin-right: 6px;
+    fill: var(--accent-color);
+}
+
+.logo_accent{
+    color: var(--accent-color)
+}
+.logo_text {
+    color: var(--text-color-1)
+}
+
+.siteNav {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text-color-1);
+    justify-content: center;
+
+}
+
+.siteNav_item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.siteNav_item_active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--accent-color);
+}
+.siteNav_item:hover{
+
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* tablet styles */
+@media screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 32px;   
+    }
+
+    .header_changeColor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 32px;
+    }
+
+    .logo_wrapper{
+        font-size: 35px;
+    }
+
+    .siteNav_item{
+        font-size: 18px;
+        line-height: 28px; 
+    }
+
+    .siteNav_item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .siteNav_item:first-child {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .siteNav_item:first-child {
+        display: block;
+    }
+
+    .header_changeColor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px 32px;
+    }
+}

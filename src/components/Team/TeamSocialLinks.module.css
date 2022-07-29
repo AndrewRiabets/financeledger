@@ -1,0 +1,32 @@
+.team_socialLinks {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.team_socialLinks_item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.icon {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 35px;
+    fill: var(--text-color-1);
+}
+
+.icon:hover {
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .team_socialLinks_container {
+        margin-top: 40px;
+        padding: 20px 240px;
+    }
+}

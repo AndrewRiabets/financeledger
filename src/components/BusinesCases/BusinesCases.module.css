@@ -1,0 +1,90 @@
+.cases_container{
+    padding: 40px 20px;
+    background-color: var(--bg-color-1);
+    color: var(--text-color-3);
+}
+
+.cases_baseline{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.cases_title{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.cases_text{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;   
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cases_gallery_list {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.cases_img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.cases_img:hover{
+    opacity: 0.8;
+}
+
+.cases_gallery_list_item{
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .cases_container {
+    padding: 40px 32px;
+    }
+
+    .cases_baseline{
+        font-size: 20px;
+        line-height: 33px;
+    }   
+
+    .cases_text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .cases_text{
+        margin-bottom: 24px;
+    }
+
+    .cases_gallery_list{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cases_container {
+        padding: 80px 28px;
+    }
+
+    .cases_container {
+        padding: 80px 30px;
+    }
+
+    .cases_gallery_list{
+        grid-gap: 20px;
+    }
+
+}
